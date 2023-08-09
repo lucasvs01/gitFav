@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitFav</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="./js/main.js" type="module" defer></script> <!-- passo 1 -> defer espera todo html ser carregado
+    passo 2 -> procura o main js na pasta js-->
+
+    <!--Notion -> https://efficient-sloth-d85.notion.site/GitFav-f8ff1c18b23745c0b46cd8d61f74b596 -->
+    <!--Figma ->  https://www.figma.com/file/B8Tm64Eg3f3T4GRF5xhYZj/%5BDesafios-Explorer%5D-GitFav-(Copy)-(Copy)?type=design&node-id=205-951&mode=design&t=cSSRyzs4AHoch8kg-0-->
+</head>
+<body>
+    <div id="app">
+
+        <header>
+            <img src="./assets/Gitfav.svg" alt="Logo do Site">
+
+            <div class="input-search">
+                <label for="search" class="sr-only">Digite o Github username que quer favoritar</label>
+                <input id="search" type="text" placeholder="Digite o Github username que quer favoritar">
+    
+                <button class="search-button">
+                    <img src="./assets/Vector.svg" alt="">
+                    <p>favoritar</p>
+                </button>    
+            </div>
+
+        </header>
+
+        <table>
+            <thead>
+                <th>Usuário</th>
+                <th>Repositories</th>
+                <th>Followers</th>
+                <th>Ação</th>
+            </thead>
+
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
